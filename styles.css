@@ -1,28 +1,52 @@
 html{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 body {
   margin: 0;
 }
 
 .container{
-  width: 100%; 
-
+  width: 100%;
+}
+.Zocom {
+  margin-left: 10em;
+}
+h1{
+  color: white;  
 }
 
-h1{
-  color: red;  
+main {
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
+  font-family: 'Ubuntu', sans-serif;
   background-color: #292626;
   width: 100vw;
-  height: 20vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+button {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  margin-top: 45px;
 }
 
 nav{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,7 +56,7 @@ nav{
 ul {
   display: flex;
   flex-direction: row; 
-
+  margin-right: 10em;
 }
 
 li {
@@ -40,21 +64,99 @@ li {
   padding: 2rem;
 }
 
+main{
+  margin: 0 220px;
+  margin-top: 97px;
+}
 
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+}
 
+.big-card{
+  max-width: 656px;
+  height: 544px;
+  border-bottom: #292626 solid 1px;
+  margin-bottom: 32px;
+}
 
+.small-card{
+  max-width: 311px;
+  height: 544px;
+  border-bottom: #292626 solid 1px;
+  margin-bottom: 32px;
+}
 
+.small-card-image{
+  max-width: 311px;
+  height: 288px;
+}
 
-
-
+.big-card-image{
+  width: 100%;
+  height: 288px;
+  object-fit: cover; 
+}
+.batman {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+}
+.Robin {
+  font-style: bold;
+}
+.batmanImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
 
 /* Footer */
 
 footer {
   display: flex;
+  justify-content: space-around;
+  background: #4F4F4F;
+  color: #eeeeee;
 }
 
-.nav {
+#nav {
   display: flex;
   flex-direction: column;
 }
+
+.about {
+  display: flex;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about > p {
+font-size: 13px;
+line-height: 0.7cm;
+}
+
+.li-footer {
+  padding: 10px 10px 10px 0px ;
+}
+
+.fa-youtube {
+  font-size: 35px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+
