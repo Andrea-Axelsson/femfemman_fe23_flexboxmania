@@ -11,10 +11,20 @@ body {
   width: 100%;
 }
 .Zocom {
-  margin-left: 10em;
+  margin-right: 1.5em;
 }
 h1{
-  color: white;  
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;  
+}
+
+h3{
+  font-size: 1.5625rem;
+}
+
+.p-card-text{
+  font-size: 0.875em;
 }
 
 main {
@@ -24,7 +34,7 @@ main {
 header {
   font-family: 'Ubuntu', sans-serif;
   background-color: #292626;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -44,24 +54,26 @@ button {
   margin-top: 45px;
 }
 
-nav{
+.header-navbar{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
+  margin: 2.25em 5%; 
 }
 
 ul {
   display: flex;
   flex-direction: row; 
-  margin-right: 10em;
+  gap: 48px;
+  color: #333333;
 }
 
 li {
   list-style-type: none;
-  padding: 2rem;
+  
 }
 
 main{
@@ -85,14 +97,14 @@ main{
 .big-card{
   max-width: 656px;
   height: 544px;
-  border-bottom: #292626 solid 1px;
+  border-bottom: #b3b3b3 solid 1px;
   margin-bottom: 32px;
 }
 
 .small-card{
   max-width: 311px;
   height: 544px;
-  border-bottom: #292626 solid 1px;
+  border-bottom: #b3b3b3 solid 1px;
   margin-bottom: 32px;
 }
 
@@ -130,25 +142,27 @@ main{
 footer {
   font-family: 'Ubuntu', sans-serif;;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   background: #4F4F4F;
   color: #eeeeee;
+  padding-top: 80px;
 }
 
-#nav {
+.nav-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ul > h2 {
   font-weight: 800;
 }
 
-
 .about {
   display: flex;
-  max-width: 300px;
-  display: flex;
+  max-width: 230px;
   flex-direction: column;
 }
 
@@ -157,18 +171,59 @@ font-size: 13px;
 line-height: 0.7cm;
 }
 
-.li-footer {
-  padding: 10px 10px 10px 0px ;
+.footer-ul{
+  display: flex;
+  flex-direction: column;
+  color: #eeeeee;
 }
 
 .fa-youtube {
   font-size: 35px;
 }
 
+
 .social-media {
   display: flex;
   justify-content: space-evenly;
+}
+
+
+/* Media query */
+
+
+@media screen and (min-width: 600px) {
+
+  .menu {
+    display: none;
+  }
+
  
 }
 
+
+@media screen and (max-width: 600px) {
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nav-footer {
+    display: none;
+  }
+
+  .social-media {
+   margin-bottom: 50px;
+  }
+
+
+  ul {
+    display: none;
+  }
+
+
+
+}
 
