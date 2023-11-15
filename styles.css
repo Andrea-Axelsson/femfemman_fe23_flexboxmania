@@ -65,14 +65,21 @@ li {
 }
 
 main{
-  margin: 0 220px;
-  margin-top: 97px;
+  margin: 0 13.75em;
+  margin-top: 6.0625em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .card-container{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 33px;
+  max-width: 1000px;
 }
 
 .big-card{
@@ -107,10 +114,9 @@ main{
   align-items: center;
   text-align: center;
   font-style: italic;
+  font-size: x-large;
 }
-.Robin {
-  font-style: bold;
-}
+
 .batmanImg {
   width: 200px;
   height: 200px;
@@ -122,6 +128,7 @@ main{
 /* Footer */
 
 footer {
+  font-family: 'Ubuntu', sans-serif;;
   display: flex;
   justify-content: space-around;
   background: #4F4F4F;
@@ -132,6 +139,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+ul > h2 {
+  font-weight: 800;
+}
+
 
 .about {
   display: flex;
