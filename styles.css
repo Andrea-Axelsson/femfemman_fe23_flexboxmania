@@ -5,11 +5,18 @@ html{
 }
 
 .container{
-  
+  max-width: 100%; 
+
 }
 
 h1{
   color: red;  
+}
+
+header {
+  background-color: #292626;
+  width: 100vw;
+  height: 20vh;
 }
 
 ul {
@@ -22,3 +29,14 @@ li {
   list-style-type: none;
   padding: 2rem;
 }
+
+
+
+
+
+
+
+
+
+/* Footer */
+
