@@ -5,33 +5,29 @@ html{
 }
 body {
   margin: 0;
-}
-
-.container{
   width: 100%;
 }
+
+
+
+
+/* ICONS */
+
+button {
+  padding: 1.5em 2.5em;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  margin-top: 2.8125em;
+}
+
 .Zocom {
   margin-right: 1.5em;
 }
-h1{
-  color: white;
-  font-weight: 700;
-  font-size: 4rem;  
-}
 
-h3{
-  font-size: 1.5625rem;
-}
+/* HEADER */
 
-.p-card-text{
-  font-size: 0.875em;
-}
-
-main {
-  font-family: 'Open Sans', sans-serif;
-}
-
-header {
+section.hero {
   font-family: 'Ubuntu', sans-serif;
   background-color: #292626;
   width: 100%;
@@ -42,16 +38,6 @@ header {
   justify-content: center;
   text-align: center;
   font-size: 2rem;
-}
-button {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-radius: 30px;
-  border: none;
-  font-weight: bold;
-  margin-top: 45px;
 }
 
 .header-navbar{
@@ -64,17 +50,19 @@ button {
   margin: 2.25em 5%; 
 }
 
-ul {
+.header-ul{
   display: flex;
   flex-direction: row; 
   gap: 48px;
   color: #333333;
 }
 
-li {
+.li-header, .li-footer {
   list-style-type: none;
   
 }
+
+/* MAIN */
 
 main{
   margin: 0 13.75em;
@@ -82,6 +70,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
   
 }
 
@@ -98,19 +87,7 @@ main{
   max-width: 656px;
   height: 544px;
   border-bottom: #b3b3b3 solid 1px;
-  margin-bottom: 32px;
-}
-
-.small-card{
-  max-width: 311px;
-  height: 544px;
-  border-bottom: #b3b3b3 solid 1px;
-  margin-bottom: 32px;
-}
-
-.small-card-image{
-  max-width: 311px;
-  height: 288px;
+  margin-bottom: 2em;
 }
 
 .big-card-image{
@@ -118,6 +95,19 @@ main{
   height: 288px;
   object-fit: cover; 
 }
+
+.small-card{
+  max-width: 311px;
+  height: 544px;
+  border-bottom: #b3b3b3 solid 1px;
+  margin-bottom: 2em;
+}
+
+.small-card-image{
+  max-width: 311px;
+  height: 288px;
+}
+
 .batman {
   font-family: 'Ubuntu', sans-serif;
   display: flex;
@@ -126,34 +116,25 @@ main{
   text-align: center;
 }
 
-.batman h3{
-  font-weight: 400;
-  font-style: italic;
-}
-.batman p {
-  font-weight: bold;
-  font-style: italic;
-  padding-bottom: 4em;
-}
+
 
 .batmanImg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
-  font-family: 'Ubuntu', sans-serif;;
+  font-family: 'Ubuntu', sans-serif;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   background: #4F4F4F;
   color: #eeeeee;
-  padding-top: 80px;
+  padding: 2.5em 2.5em;
 }
 
 .nav-footer {
@@ -163,7 +144,7 @@ footer {
   align-items: center;
 }
 
-ul > h2 {
+.footer-ul > h2 {
   font-weight: 800;
 }
 
@@ -174,7 +155,7 @@ ul > h2 {
 }
 
 .about > p {
-font-size: 13px;
+font-size: 0.8125rem;
 line-height: 0.7cm;
 }
 
@@ -182,16 +163,43 @@ line-height: 0.7cm;
   display: flex;
   flex-direction: column;
   color: #eeeeee;
+  gap: 30px;
 }
 
 .fa-youtube {
-  font-size: 35px;
+  font-size: 2.1875rem;
 }
 
 
 .social-media {
   display: flex;
   justify-content: space-evenly;
+}
+
+/* FONTS */
+
+h1{
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;  
+}
+
+h3{
+  font-size: 1.5625rem;
+}
+
+.p-card-text{
+  font-size: 0.875em;
+}
+
+.batman h3{
+  font-weight: 400;
+  font-style: italic;
+}
+.batman p {
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 4em;
 }
 
 
@@ -219,11 +227,11 @@ line-height: 0.7cm;
   }
 
   .social-media {
-   margin-bottom: 50px;
+   margin-bottom: 3.125em;
   }
 
 
-  ul {
+  .header-ul {
     display: none;
   }
 }
