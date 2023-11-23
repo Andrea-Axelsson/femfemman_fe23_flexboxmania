@@ -99,7 +99,7 @@ main{
   height: 288px;
 }
 
-.batman {
+.image {
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@ main{
   text-align: center;
 }
 
-.batmanImg {
+.image__circular {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -182,11 +182,11 @@ h3{
   font-size: 0.875em;
 }
 
-.batman h3{
+.image__title{
   font-weight: 400;
   font-style: italic;
 }
-.batman p {
+.image__text {
   font-weight: bold;
   font-style: italic;
   padding-bottom: 4em;
